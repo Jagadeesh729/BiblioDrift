@@ -12,7 +12,7 @@ from typing import Optional, Any, Dict, Callable, List, Union
 from functools import wraps
 from datetime import datetime, timedelta
 from enum import Enum
-from backend.config import app_config
+from app.config import app_config
 
 try:
     import redis

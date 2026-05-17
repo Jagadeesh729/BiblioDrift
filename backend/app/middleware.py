@@ -10,8 +10,8 @@ try:
     from .error_responses import invalid_json_error
     from .security_parsers import validate_content_type as _validate_content_type_header
 except ImportError:
-    from error_responses import invalid_json_error
-    from security_parsers import validate_content_type as _validate_content_type_header
+    from core.responses.error_responses import invalid_json_error
+    from core.security.security_parsers import validate_content_type as _validate_content_type_header
 
 logger = logging.getLogger(__name__)
 
