@@ -264,6 +264,7 @@ class AmbientManager {
                         this.saveAudioState('space', true);
                     }).catch(e => { console.error("Space Drift failed:", e); });
                 } else {
+                    if (typeof clearTheme === 'function') clearTheme();
                     this.spaceAudio.pause();
                     this.saveAudioState('space', false);
                 }
@@ -279,6 +280,7 @@ class AmbientManager {
                         this.saveAudioState('train', true);
                     }).catch(e => { console.error("Night Train failed:", e); });
                 } else {
+                    if (typeof clearTheme === 'function') clearTheme();
                     this.trainAudio.pause();
                     this.saveAudioState('train', false);
                 }
@@ -294,6 +296,7 @@ class AmbientManager {
                         this.saveAudioState('forest', true);
                     }).catch(e => { console.error("Forest Cabin failed:", e); });
                 } else {
+                    if (typeof clearTheme === 'function') clearTheme();
                     this.forestAudio.pause();
                     this.saveAudioState('forest', false);
                 }
@@ -309,6 +312,7 @@ class AmbientManager {
                         this.saveAudioState('magic', true);
                     }).catch(e => { console.error("Magic Realm failed:", e); });
                 } else {
+                    if (typeof clearTheme === 'function') clearTheme();
                     this.magicAudio.pause();
                     this.saveAudioState('magic', false);
                 }
@@ -324,6 +328,7 @@ class AmbientManager {
                         this.saveAudioState('anime', true);
                     }).catch(e => { console.error("Wisteria Night failed:", e); });
                 } else {
+                    if (typeof clearTheme === 'function') clearTheme();
                     this.animeAudio.pause();
                     this.saveAudioState('anime', false);
                 }

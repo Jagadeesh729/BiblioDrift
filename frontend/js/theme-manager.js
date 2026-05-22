@@ -226,24 +226,24 @@ const THEMES = {
     },
     "magic": {
         light: {
-            "--theme-bg": "#f0fdfa",
+            "--theme-bg": "linear-gradient(135deg, #fcebeb 0%, #e8f5e9 33%, #e3f2fd 66%, #fff9c4 100%)",
             "--theme-surface": "#ffffff",
-            "--theme-accent": "#0d9488",
-            "--theme-accent-light": "#14b8a6",
-            "--theme-text": "#134e4a",
-            "--theme-text-muted": "#0f766e",
-            "--theme-border": "#ccfbf1",
-            "--theme-pill-bg": "#f0fdfa"
+            "--theme-accent": "#740001",
+            "--theme-accent-light": "#ae0001",
+            "--theme-text": "#111111",
+            "--theme-text-muted": "#555555",
+            "--theme-border": "#e0e0e0",
+            "--theme-pill-bg": "#f5f5f5"
         },
         dark: {
-            "--theme-bg": "#134e4a",
-            "--theme-surface": "#0f766e",
-            "--theme-accent": "#22d3ee",
-            "--theme-accent-light": "#67e8f9",
-            "--theme-text": "#f0fdfa",
-            "--theme-text-muted": "#ccfbf1",
-            "--theme-border": "#115e59",
-            "--theme-pill-bg": "#0f766e"
+            "--theme-bg": "linear-gradient(135deg, #2a0808 0%, #0c1a12 33%, #060a1a 66%, #2a2208 100%)",
+            "--theme-surface": "#161616",
+            "--theme-accent": "#eeba30",
+            "--theme-accent-light": "#d3a625",
+            "--theme-text": "#f5f5f5",
+            "--theme-text-muted": "#aaaaaa",
+            "--theme-border": "#333333",
+            "--theme-pill-bg": "#222222"
         }
     }
 };
