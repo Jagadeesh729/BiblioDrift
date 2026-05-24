@@ -1394,9 +1394,6 @@ class BookRenderer {
                 }
             }
         } catch (err) {
-                }
-            }
-        } catch (err) {
             console.error('Failed to explore book mood:', err);
             showError('Network error connecting to mood analysis service.');
         }
