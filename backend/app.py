@@ -1110,8 +1110,8 @@ def handle_mood_search(validated_data):
             
             logger.info(f"Parsed mood query: {parsed_query.to_dict()}")
             
-            # Use enhanced prompt for recommendations
-            recommendations = get_ai_recommendations(enhanced_prompt)
+            # Use enhanced prompt directly, without re-wrapping it in the recommendation template
+            recommendations = get_ai_recommendations(enhanced_prompt, raw_prompt=True)
             
             return success_response(
                 data={

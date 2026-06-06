@@ -823,11 +823,11 @@ def generate_book_note(description, title="", author="", vibe=""):
 
 
 @cache_recommendations
-def get_ai_recommendations(query):
-    """Generate AI-powered book recommendations based on query."""
+def get_ai_recommendations(query, raw_prompt=False):
+    """Generate AI-powered book recommendations based on a raw prompt or a query."""
     if llm_service.is_available():
         try:
-            prompt = PromptTemplates.get_recommendation_recommend(query)
+            prompt = query if raw_prompt else PromptTemplates.get_recommendation_recommend(query)
             llm_response = llm_service.generate_text(prompt, llm_service.config['recommendation_max_tokens'])
             if llm_response:
                 return llm_response
