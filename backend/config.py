@@ -24,10 +24,10 @@ def load_environment():
     env_path = os.path.join(base_dir, 'config', f'.env.{env}')
     
     if os.path.exists(env_path):
-        load_dotenv(env_path, override=True)
+        load_dotenv(env_path)
     else:
         # Fallback to standard .env in root
-        load_dotenv(override=True)
+        load_dotenv()
 
 load_environment()
 
