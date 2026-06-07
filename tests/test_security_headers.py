@@ -4,14 +4,6 @@ import sys
 import pytest
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'backend'))
-from app import app
-
-
-@pytest.fixture
-def client():
-    app.config['TESTING'] = True
-    with app.test_client() as test_client:
-        yield test_client
 
 
 def test_security_headers_are_present_on_api_responses(client):
