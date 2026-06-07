@@ -3141,9 +3141,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const themeManager = new ThemeManager();
 
     // 2. Load Config before rendering shelves so Google Books key is available.
-    await loadConfig();
-
-
+    // await loadConfig(); // Removed: function is undefined and Google Books API works without key
 
     // --- AUTH LOGIC ---
     const toggleLink = document.getElementById('toggleText');
